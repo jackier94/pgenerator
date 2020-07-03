@@ -17,30 +17,28 @@
           <h2 class="head2">Generate a Password</h2>
         </div>
         <div class="card-body">
-          <textarea
-            readonly
+          <h3 id="passwordOutput"> Your Password</h3>
+           
             
-            id="password"
-            placeholder="Your New and Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
+            
+            
         </div>
-        <form id= "password1" class="form">
+        <form id= "generate-password" class="form">
           <label for="characterAmountNumber">Number of Characters</label>
           <div class="character-amount-container">
             <input type="range" min="8" max="128" value="8"
             id="characterRange">
             <input class="number-input" type="number" min="8" max="128"
-            value="10" id="characterNumbers">
+            value="8" id="characterNumber">
           </div>
 
-          <label for="upperCaseLetter">Upper Case Letters</label>
+          <label for="upperCase">Upper Case Letters</label>
           <input type="checkbox" id="upperCase">
 
-          <label for="numberChar">Numbers</label>
+          <label for="numberCharacters">Numbers</label>
           <input type="checkbox" id="numberCharacters">
 
-          <label for="symbolchar">Symbols</label>
+          <label for="symbols">Symbols</label>
           <input type="checkbox" id="symbols">
 
           <button type="submit" id="generate" class="btn">Generate Password </button>
@@ -54,4 +52,5 @@
       
     </script>
   </body>
+  
 </html>

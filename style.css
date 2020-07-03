@@ -14,10 +14,27 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #333;
+  color: white;
+  min-height: 100vh;
+}
+
+.head2 {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+.character-amount-container {
+  display: flex;
+  align-items: center;
 }
 
 .wrapper {
+  background-color: #006699;
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -55,9 +72,9 @@ header {
 }
 
 .form {
-    display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 2rem;
 }
 
 .card-footer {
@@ -80,7 +97,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(80, 8, 175);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -95,7 +112,7 @@ header {
 }
 
 .btn:hover {
-    background-color: rgb(176, 127, 255);
+  background-color: rgb(176, 127, 255);
 }
 
 button[disabled] {
@@ -107,7 +124,7 @@ button[disabled] {
   float: right;
 }
 
-#password {
+#passwordOutput {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -122,10 +139,12 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
+  border: 2px solid #c0c7cf;
+  border-radius: 0.5rem;
   resize: none;
   overflow: hidden;
+  color: black;
+  word-break: break-all;
 }
 
 @media (max-width: 690px) {
