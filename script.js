@@ -67,8 +67,11 @@ function generatePassword(
 
   for (let i = 0; i < characterNumbers; i++) {
     const character = chartCode[Math.floor(Math.random() * chartCode.length)];
-    passwordCharacter.push(String.fromCharCode(chartCode));
+    console.log(character + "character");
+    console.log(chartCode + "hello");
+    passwordCharacter.push(String.fromCharCode(character));
   }
+  console.log(passwordCharacter);
   return passwordCharacter.join("");
 }
 
